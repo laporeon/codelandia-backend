@@ -16,7 +16,7 @@ module.exports = {
         .status(400)
         .json({ error: 'ID já cadastrado. Por favor, tente outro número.' });
 
-    if (!title || !content || !author || !tags) {
+    if (!_id || !title || !content || !author || !tags) {
       return res.status(400).json({
         error: 'Por favor, preencha todos os campos.',
       });
